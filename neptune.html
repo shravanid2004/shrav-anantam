@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+        }
+
+        .video-container {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 30%; 
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            padding: 0;
+            margin: 0;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-container {
+            margin-left: 30%;
+            padding: 20px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4em; 
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif; 
+        }
+
+        .top-images {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .top-images img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .top-images img:hover {
+            transform: scale(1.1); 
+        }
+
+        .middle-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .planet-video {
+            width: 600px; 
+            height: 400px; 
+            margin: 0 20px; 
+        }
+
+        .side-link {
+            width: 100px; 
+            height: 100px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .side-link:hover {
+            transform: scale(1.1); 
+        }
+
+        h2 {
+            font-size: 2.5em; 
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.5em; 
+            line-height: 1.8; 
+            text-align: center;
+            max-width: 800px; 
+            font-family: 'Arial', sans-serif; 
+            margin-top: 20px;
+            margin-bottom: 30px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video src="videos/solarsys.mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="content-container">
+        <h1>Explore Our Solar System</h1>
+
+        <div class="top-images">
+            <a href="eplorespace.html"><img src="images/⬅️ Left Arrow Emoji.jpg" alt="Mercury"></a>
+            <a href="homepage.html"><img src="images/black home icon.jpg" alt="Earth"></a>
+        </div>
+
+        <div class="middle-content">
+            <a href="uranus.html"><img class="side-link" src="images/⬅️ Left Arrow Emoji.jpg" alt="Mars"></a>
+
+            <div class="planet-video">
+                <video src="videos\nep.mp4" autoplay loop muted></video>
+            </div>
+
+            <a href="solar.html"><img class="side-link" src="images/➡️ Right Arrow Emoji.jpg" alt="Jupiter"></a>
+        </div>
+
+        <h2>Neptune: The distant world of supersonic winds.</h2>
+        <p>Neptune, the eighth and farthest planet from the Sun, is characterized by its striking blue color, also due to the presence of methane in its atmosphere. It is the smallest of the gas giants and has a dynamic atmosphere with the fastest winds recorded in the solar system, reaching speeds of up to 2,100 km/h (1,300 mph). Neptune has a complex system of storms, with the Great Dark Spot being one of its most prominent features, although it can appear and disappear over time. The planet has a faint ring system and 14 known moons, with Triton being the largest; Triton is geologically active and is unique among large moons for its retrograde orbit. Studying Neptune helps scientists understand the outer planets' atmospheres and the processes that govern their weather patterns, contributing to our understanding of the solar system's formation and evolution. </p>
+    </div>
+
+</body>
+</html>

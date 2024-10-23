@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANANTAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"> 
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; 
+            overflow: auto; 
+            position: relative;
+            font-family: 'Orbitron', sans-serif; 
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px; 
+            background-color: black; 
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            padding: 0 20px; 
+            z-index: 2; 
+        }
+
+        .navbar h1 {
+            color: white; 
+            margin: 0; 
+            font-size: 24px; 
+            letter-spacing: 2px; 
+        }
+
+        .navbar .top-left-images {
+            display: flex; 
+            gap: 10px; 
+            position: absolute; 
+            left: 20px; 
+        }
+
+        .navbar .top-left-images a {
+            display: block; 
+        }
+
+        .navbar .top-left-images img {
+            width: 50px; 
+            height: 50px; 
+            cursor: pointer; 
+        }
+
+        .big-image {
+            position: fixed;
+            top: 80px; 
+            right: 20px; 
+            width: 250px; 
+            height: auto; 
+        }
+
+        .translucent-box {
+            position: relative; 
+            margin: 80px auto; 
+            width: 700px; 
+            height: auto; 
+            background-color: rgba(255, 255, 255, 0.7); 
+            border: 5px solid white; 
+            border-radius: 10px; 
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            z-index: 1;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); 
+            transition: box-shadow 0.3s; 
+            margin-top: 60px; 
+            padding: 20px; 
+            text-align: left; 
+        }
+
+        .translucent-box:hover {
+            box-shadow: 0 0 25px white; 
+        }
+
+        .translucent-box p {
+            color: black;
+            font-size: 18px; 
+            margin: 0; 
+            font-family: 'Roboto', sans-serif; 
+        }
+
+        
+        .content {
+            height: 200vh; 
+            background: rgba(255, 255, 255, 0.1);
+            padding-top: 60px; 
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop class="video-background">
+        <source src="videos/blackstarry.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="navbar">
+        <div class="top-left-images">
+            <a href="ourteammain.html"><img src="images/⬅️ Left Arrow Emoji.jpg" alt="Image 1"></a>
+            <a href="homepage.html"><img src="images/black home icon.jpg" alt="Image 2"></a>
+        </div>
+        <h1>OUR FOUNDER'S STELLAR VISION</h1> 
+    </div>
+
+    <img src="images/jivan.jpeg" alt="Big Image" class="big-image">
+
+    <div class="translucent-box">
+        <p>Meet Jivan Karande, our visionary founder and driving force behind Anantam. Currently in his 4th year at PCCOE, Jivan has already made a significant impact on the college community. Recently, he was honored as the 2nd runner-up for PCCOE Youth Icon, a testament to his exceptional leadership and dedication.<br><br>
+
+        Jivan's entrepreneurial spirit and unwavering passion led to the conception of Anantam, a pioneering club focused on rocket science and astrophysics. His infectious energy and guidance have inspired countless students to push beyond their boundaries. As a hyperactive and intelligent student, Jivan has left an indelible mark on various cultural, social, and technical clubs and events.<br><br>
+
+        His impressive resume boasts executive positions in esteemed organizations such as NSS, AIMSA, Art Circle, and many more. A creative force to be reckoned with, Jivan has even scripted plays that clinched prestigious awards at the state level, including the coveted Karandak.<br><br>
+
+        Jivan's motto, 'Step out of your comfort zone, only then can you outperform yourselves,' resonates deeply with his juniors, inspiring us to strive for excellence. Under his leadership, Anantam has taken shape, and we pledge to nurture and grow this vision further.<br><br>
+
+        As one of India's select few clubs devoted to rocket science and astrophysics, Anantam aims to cultivate innovative minds that will make groundbreaking contributions to the field. We envision a future where our alumni make India proud, achieving laurels in astrophysics and beyond. Jivan's legacy has just begun, and we're honored to be a part of this extraordinary journey.</p>
+    </div>
+
+
+</body>
+</html>

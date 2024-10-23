@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+        }
+
+        .video-container {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 30%; 
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            padding: 0;
+            margin: 0;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-container {
+            margin-left: 30%;
+            padding: 20px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4em; 
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif; 
+        }
+
+        .top-images {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .top-images img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .top-images img:hover {
+            transform: scale(1.1); 
+        }
+
+        .middle-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .planet-video {
+            width: 600px; 
+            height: 400px; 
+            margin: 0 20px; 
+        }
+
+        .side-link {
+            width: 100px; 
+            height: 100px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .side-link:hover {
+            transform: scale(1.1); 
+        }
+
+        h2 {
+            font-size: 2.5em; 
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.5em; 
+            line-height: 1.8; 
+            text-align: center;
+            max-width: 800px; 
+            font-family: 'Arial', sans-serif; 
+            margin-top: 20px; 
+            margin-bottom: 30px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video src="videos/solarsys.mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="content-container">
+        <h1>Explore Our Solar System</h1>
+
+        <div class="top-images">
+            <a href="eplorespace.html"><img src="images/⬅️ Left Arrow Emoji.jpg" alt="Mercury"></a>
+            <a href="homepage.html"><img src="images/black home icon.jpg" alt="Earth"></a>
+        </div>
+
+        <div class="middle-content">
+            <a href="mercury.html"><img class="side-link" src="images/⬅️ Left Arrow Emoji.jpg" alt="Mars"></a>
+
+            <div class="planet-video">
+                <video src="videos\ven.mp4" autoplay loop muted></video>
+            </div>
+
+            <a href="earth.html"><img class="side-link" src="images/➡️ Right Arrow Emoji.jpg" alt="Jupiter"></a>
+        </div>
+
+        <h2>Venus
+       : The scorching sister of Earth.</h2>
+        <p>Venus, often referred to as Earth's "sister planet" due to its similar size and composition, has a thick, toxic atmosphere composed mainly of carbon dioxide, with clouds of sulfuric acid. This greenhouse gas-rich atmosphere traps heat, resulting in surface temperatures that soar to about 467°C (872°F), making it the hottest planet in the solar system. Venus has a retrograde rotation, meaning it spins in the opposite direction to most planets, leading to an unusual day-night cycle. It takes longer to rotate once on its axis than it does to orbit the Sun, resulting in very long days. The surface of Venus is marked by vast plains, volcanic features, and mountain ranges, though evidence of active volcanism is still debated. Despite being an uninhabitable world, studying Venus helps scientists understand planetary atmospheres and climate processes, which can shed light on the future of Earth's climate.</p>
+    </div>
+
+</body>
+</html>

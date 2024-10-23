@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 20px;
+            text-align: center;
+            color: orange; 
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px;
+            max-width: 500px;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        .responsive-image {
+            border: 10px solid white;
+            border-radius: 50%;
+            width: 450px; 
+            height: 450px; 
+            margin-left: 50px; 
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .animated-button {
+            background-color: black;
+            border: 3px solid white; 
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.4s;
+            border-radius: 30px; 
+        }
+        .animated-button:hover {
+            color: black;
+        }
+        .button-container {
+            padding: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px; 
+            height: 50px; 
+        }
+    </style>
+    <title>About Our Stellar Crew</title>
+</head>
+<body>
+    <img src="images/black home icon.jpg" alt="Logo" class="logo" onclick="window.location.href='homepage.html';" style="cursor: pointer;"> 
+    <h1>ABOUT OUR STELLAR CREW</h1>
+    <div class="content">
+        <p>Anantam is PCCOE's 7th motorsport club, a group driven by passion and the desire to explore the vast possibilities within the realm of motorsports. As newcomers to this exciting field, we are determined to push our limits and achieve remarkable feats. Our team is composed of enthusiastic individuals who believe that with hard work and dedication, we can overcome any challenge that comes our way. We aim to innovate, collaborate, and inspire others while pursuing our dreams and making a significant impact in the motorsport community.</p>
+        <img src="ourteam.jpg" alt="Stellar Crew" class="responsive-image">
+    </div>
+    <div class="buttons">
+        <div class="button-container">
+            <a href="jivan.html" class="animated-button">Our Founder's Vision</a>
+        </div>
+        <div class="button-container">
+            <a href="orteamimages.html" class="animated-button">Stellar Pics</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANANTAM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .navbar {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2em;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar img {
+            height: 40px;  
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        .navbar-content {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .background-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 100px 50px;
+            color: black;
+        }
+
+        .box {
+            margin: 40px auto;
+            padding: 30px;
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 3px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.3);
+            animation: glow 2s infinite ease-in-out;
+            backdrop-filter: blur(5px);
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="navbar">
+        
+        <a href="index.html">
+            <img src="images\Left Back Arrow Button PNG.jpg" alt="Home Icon">
+        </a>
+
+      
+
+        <div class="navbar-content">
+            Pimpri Chinchwad College of Engineering's Club of Space Research and Rocket Science
+        </div>
+    </div>
+
+   
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source src="videos/blackstarry.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    
+    <div class="content">
+        <div class="box">
+            <a href="ourteammain.html">Our Team</a>
+        </div>
+
+        <div class="box">
+            <a href="eplorespace.html">Uncover the Wonders of Space</a>
+        </div>
+
+        <div class="box">
+            <a href="news.html">Astrophysics News</a>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
